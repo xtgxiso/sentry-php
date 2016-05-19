@@ -457,9 +457,6 @@ class Raven_Client
             $user = array(
                 'id' => session_id(),
             );
-            if (!empty($_SESSION)) {
-                $user['data'] = $_SESSION;
-            }
         }
         return array(
             'user' => $user,
